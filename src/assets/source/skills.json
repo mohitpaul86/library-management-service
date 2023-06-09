@@ -1,0 +1,143 @@
+{
+  "build": [
+    {
+      "category": "build",
+      "name": "Programming Languages",
+      "proficiency": "4"
+    },
+    {
+      "category": "build",
+      "name": "Frameworks",
+      "proficiency": "4"
+    },
+    {
+      "category": "build",
+      "name": "Modern Web Development",
+      "proficiency": "4"
+    },
+    {
+      "category": "build",
+      "name": "Libraries",
+      "proficiency": "4"
+    },
+    {
+      "category": "build",
+      "name": "Software Architecture",
+      "proficiency": "4"
+    },
+    {
+      "category": "build",
+      "name": "UI/UX",
+      "proficiency": "4"
+    },
+    {
+      "category": "build",
+      "name": "Javascript",
+      "proficiency": "4"
+    },
+    {
+      "category": "build",
+      "name": "Typescript",
+      "proficiency": "4"
+    },
+    {
+      "category": "build",
+      "name": "Mobile Development",
+      "proficiency": "4"
+    }
+  ],
+  "infra": [
+    {
+      "category": "infra",
+      "name": "DevOps",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "Cloud Infrastructure",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "CI/CD",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "Container",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "Quality",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "Testing",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "Security",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "Git",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "Kubernetes",
+      "proficiency": "4"
+    },
+    {
+      "category": "infra",
+      "name": "Bit Bucket",
+      "proficiency": "4"
+    },
+    {
+      "category": "connect",
+      "name": "Confluence",
+      "proficiency": "4"
+    }
+  ],
+  "connect": [
+    {
+      "category": "connect",
+      "name": "Team Activities",
+      "proficiency": "4"
+    },
+    {
+      "category": "connect",
+      "name": "Innovation",
+      "proficiency": "4"
+    },
+    {
+      "category": "connect",
+      "name": "Future of Work",
+      "proficiency": "4"
+    },
+    {
+      "category": "connect",
+      "name": "Hackathons",
+      "proficiency": "4"
+    },
+    {
+      "category": "connect",
+      "name": "Leadership",
+      "proficiency": "4"
+    },
+    {
+      "category": "connect",
+      "name": "Business",
+      "proficiency": "4"
+    },
+    {
+      "category": "connect",
+      "name": "Soft-skills",
+      "proficiency": "4"
+    }
+  ]
+}

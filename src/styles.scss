@@ -1,1 +1,211 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+$color: #99a2b1;
+$regular: Poppins-Regular;
+$light: Poppins-Light;
+$bold: Poppins-Bold;
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) and (max-width: 576px) {
+  body {
+    background-color: #212529;
+  }
+
+  button {
+    &:focus,
+    &:hover,
+    &:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  h1 {
+    font-family: $light;
+    margin: 20px 0 20px 0;
+    color: $color;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-family: $regular;
+    margin: 20px 0 20px 0;
+    color: $color;
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-family: $regular;
+    margin: 20px 0 10px 0;
+    color: $color;
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-family: $regular;
+  }
+
+  a {
+    color: $color;
+
+    &:active,
+    &:hover {
+      color: $color;
+    }
+  }
+
+  p {
+    margin-bottom: 0 !important;
+    font-size: 12px;
+  }
+
+  header,
+  main {
+    font-family: $regular;
+    font-size: 8px;
+    width: 100%;
+    margin: auto;
+  }
+
+  header {
+    background-color: #373d48;
+  }
+
+  main {
+    background-color: #373d48;
+    padding: 0 20px 0 20px;
+  }
+}
+
+/* Rest All Extra large devices */
+@media (min-width: 768px) {
+  button {
+    &:focus,
+    &:hover,
+    &:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  h1 {
+    font-family: $light;
+    margin: 20px 0 20px 0;
+    color: $color;
+    font-size: 80px;
+  }
+
+  h3 {
+    font-family: $regular;
+    margin: 20px 0 20px 0;
+    color: $color;
+    font-size: 3rem;
+  }
+
+  h5 {
+    font-family: $regular;
+    margin: 20px 0 10px 0;
+    color: $color;
+    font-size: 26px;
+  }
+
+  h6 {
+    font-family: $regular;
+  }
+
+  a {
+    color: $color;
+    text-decoration-line: underline;
+
+    &:active,
+    &:hover {
+      color: $color;
+    }
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  header,
+  main {
+    font-family: $regular;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  header {
+    background-color: #212529;
+  }
+
+  main {
+    background-color: #212529;
+    padding: 0 20px 0 20px;
+  }
+
+  label {
+    font-family: $bold;
+    font-size: 22px;
+  }
+
+}
+
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(./assets/Poppins/Poppins-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(./assets/Poppins/Poppins-Light.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(./assets/Poppins/Poppins-Medium.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins-Black;
+  src: url(./assets/Poppins/Poppins-Black.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(./assets/Poppins/Poppins-Regular.ttf);
+  font-display: swap;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.loader {
+  height: 6px !important;
+  color: #9aa2b1 !important;
+}
+
+.skillContainer {
+  width: 100% !important;
+}
