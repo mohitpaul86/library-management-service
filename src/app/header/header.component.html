@@ -10,9 +10,9 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li>
                     <div class="input-group" style="width: 50em">
-                        <input type="text" class="form-control" placeholder="Book Name or ISBN"
-                               aria-label="Book Name or ISBN" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                        <input type="text" id="search" class="form-control" [(ngModel)]="searchTerm" placeholder="Search book by Name or ISBN"
+                               aria-label="Book Name or ISBN" aria-describedby="button-addon2" (keyup)="searchBook()">
+                        <!--<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>-->
                     </div>
                 </li>
 
@@ -20,15 +20,13 @@
                     <a class="nav-link" href="#">Inventory</a>
                 </li>
                 <li class="nav-item ms-3">
-                    <a class="nav-link" href="#">Users Management</a>
+                    <a class="nav-link" [routerLink]="['/users']">Users Management</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
-                <div class="dropdown">
-                    <i class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                    </i>
+                <div class="dropdown dropstart">
+                    <img width="50px" height="50px" style="border-radius: 50%" src="assets/images/mohit1.jpg" id="dropdownMenuButton1"
+                         data-bs-toggle="dropdown" aria-expanded="false" alt="...">
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Logout!</a></li>

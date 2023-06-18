@@ -1,4 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
+import {DataService} from "../data-service";
 
 @Component({
     selector: 'app-header',
@@ -6,9 +7,10 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, OnDestroy {
+    searchTerm: string = '';
 
 
-    constructor() {
+    constructor(private dataService: DataService) {
         this.defaultLanguageConfigLoader();
     }
 
@@ -16,6 +18,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit(): void {
+    }
+
+    searchBook() {
+        this.dataService.sendData(this.searchTerm);
     }
 
 
