@@ -4,6 +4,8 @@ import {Observable} from "rxjs";
 import {AgGridAngular} from "ag-grid-angular";
 import {HttpClient} from "@angular/common/http";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {UserService} from "../shared/user.service";
+import {MessageService} from "primeng/api";
 
 @Component({
     selector: 'app-user',
@@ -12,21 +14,23 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class UserComponent {
 
-    constructor(private http: HttpClient) {
+    constructor(private http: HttpClient, private readonly userService: UserService, private readonly messageService: MessageService) {
     }
 
 
     AddUserForm = new FormGroup({
-        firstName: new FormControl('', Validators.required),
+        firstName: new FormControl('', [Validators.required]),
         lastName: new FormControl('', Validators.required),
         dob: new FormControl('', Validators.required),
         email: new FormControl('', Validators.required),
-        contact: new FormControl('', Validators.required),
+        contact: new FormControl('', [Validators.required, Validators.pattern("^[0-9]*$")]),
         address: new FormControl('', Validators.required)
     })
 
     saveNewUser() {
-        console.log(this.AddUserForm.value);
+        this.userService.addUser("users", this.AddUserForm.value.contact!!, this.AddUserForm.value).then(() => {
+            this.messageService.add({severity: 'success', summary: 'Success', detail: 'Successfully Added.'});
+        })
     }
 
 

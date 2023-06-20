@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {DataService} from "../data-service";
+import {DataService} from "../shared/data-service";
 
 @Component({
     selector: 'app-header',

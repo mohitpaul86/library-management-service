@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Book} from "./book.model";
-import {DataService} from "../data-service";
+import {DataService} from "../shared/data-service";
 import {Subscription} from "rxjs";
 
 @Component({
@@ -14,7 +14,6 @@ export class MainComponent {
     filteredBooks: Book [] = []
     Subscription1$: Subscription = new Subscription();
     Subscription2$: Subscription = new Subscription();
-
 
     constructor(private readonly httpClient: HttpClient, private readonly dataService: DataService) {
     }

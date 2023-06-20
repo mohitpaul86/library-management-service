@@ -11,9 +11,11 @@ import {AgGridModule} from "ag-grid-angular";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
-import {DataService} from "./data-service";
 import {AngularFireModule} from "@angular/fire/compat";
 import {environment} from "../environments/environment";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {SharedServicesModule} from "./shared/services.module";
+import {MessagesModule} from "primeng/messages";
 
 @NgModule({
     declarations: [
@@ -25,15 +27,17 @@ import {environment} from "../environments/environment";
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         CommonModule,
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
         AgGridModule,
         FormsModule,
-        AngularFireModule.initializeApp(environment.firebaseConfig)
+        SharedServicesModule,
+        AngularFireModule.initializeApp(environment.firebaseConfig),
+        MessagesModule
     ],
-    providers: [DataService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
