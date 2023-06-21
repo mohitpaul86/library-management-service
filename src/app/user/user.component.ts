@@ -23,13 +23,17 @@ export class UserComponent {
         lastName: new FormControl('', Validators.required),
         dob: new FormControl('', Validators.required),
         email: new FormControl('', Validators.required),
-        contact: new FormControl('', [Validators.required, Validators.pattern("^[0-9]*$")]),
+        contact: new FormControl(0, [Validators.required, Validators.pattern("^[0-9]*$")]),
         address: new FormControl('', Validators.required)
     })
 
     saveNewUser() {
         this.userService.addUser("users", this.AddUserForm.value.contact!!, this.AddUserForm.value).then(() => {
-            this.messageService.add({severity: 'success', summary: 'Success', detail: 'Successfully Added.'});
+            this.messageService.add({
+                severity: 'success',
+                summary: 'Success',
+                detail: 'A new user has registered successfully.'
+            });
         })
     }
 

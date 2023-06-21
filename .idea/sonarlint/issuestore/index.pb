@@ -13,14 +13,8 @@ M
 src/app/app-routing.module.ts,6/f/6fd35c988c6ab19d90be440792fa8c817dd8dc67
 P
  src/app/main/main.component.scss,1/2/1218ab51288919948a75c3780f845cb9f4911fb0
-T
-$src/app/header/header.component.html,0/4/04ec72c850f33c7ae94fe4bb26ffac1894f4eda9
 P
  .firebase/hosting.cHVibGlj.cache,3/5/35b65056512ce92750ded01b1ca990e3278d3fea
-M
-src/assets/data/bookData.json,6/1/6141587eee49fa75f92ba579a8484cff391171e9
-r
-B.firebase/hosting.ZGlzdC9saWJyYXJ5LW1hbmFnZW1lbnQtc2VydmljZQ.cache,d/7/d7edcdc039c863e10b3265368ccecf24b4863ab8
 ?
 firestore.rules,5/1/510e17d6ad5f02138750b2acf2a8357d826097e9
 A

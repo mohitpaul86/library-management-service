@@ -9,8 +9,8 @@ export class UserService {
     constructor(private readonly http: HttpClient, private readonly afs: AngularFirestore) {
     }
 
-    async addUser(collection: string, doc: string, payload: any): Promise<void> {
-        return await this.afs.collection(collection).doc(doc).set(payload);
+    async addUser(collection: string, doc: number, payload: any): Promise<void> {
+        return await this.afs.collection(collection).doc(doc.toString()).set(payload);
     }
 
     getFromDbByCollection(collection: string, doc: string): Observable<any> {
