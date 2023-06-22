@@ -13,6 +13,10 @@ export class UserService {
         return await this.afs.collection(collection).doc(doc.toString()).set(payload);
     }
 
+    async getUsers(collection: string): Promise<Observable<any>> {
+        return this.afs.collection(collection).valueChanges()
+    }
+
     getFromDbByCollection(collection: string, doc: string): Observable<any> {
         return this.afs.collection(collection).doc(doc).valueChanges();
     }

@@ -16,6 +16,9 @@ import {environment} from "../environments/environment";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {SharedServicesModule} from "./shared/services.module";
 import {MessagesModule} from "primeng/messages";
+import {TableModule} from "primeng/table";
+import {ChipsModule} from "primeng/chips";
+import {LoginComponent} from './login/login.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +26,8 @@ import {MessagesModule} from "primeng/messages";
         HeaderComponent,
         MainComponent,
         FooterComponent,
-        UserComponent
+        UserComponent,
+        LoginComponent
     ],
     imports: [
         BrowserModule,
@@ -36,7 +40,9 @@ import {MessagesModule} from "primeng/messages";
         FormsModule,
         SharedServicesModule,
         AngularFireModule.initializeApp(environment.firebaseConfig),
-        MessagesModule
+        MessagesModule,
+        TableModule,
+        ChipsModule
     ],
     bootstrap: [AppComponent]
 })

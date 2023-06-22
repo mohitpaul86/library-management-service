@@ -1,12 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import 'ag-grid-community/styles/ag-grid.css';
-@import 'ag-grid-community/styles/ag-theme-alpine.css';
 @import "~primeicons/primeicons.css";
 @import "~primeng/resources/themes/bootstrap4-dark-blue/theme.css";
 @import "~primeng/resources/primeng.min.css";
-
 
 
 $color: #99a2b1;
@@ -53,6 +49,11 @@ $bold: Poppins-Bold;
 
   h6 {
     font-family: $regular;
+  }
+
+  .display-8{
+    font-family: $regular;
+    font-size: 2rem;
   }
 
   a {
@@ -122,6 +123,12 @@ $bold: Poppins-Bold;
   h6 {
     font-family: $regular;
   }
+
+  .display-8{
+    font-family: $regular;
+    font-size: 2rem;
+  }
+
 
   a {
     color: $color;
