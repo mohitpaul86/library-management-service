@@ -24,4 +24,16 @@ export class UserService {
     getFile(filePath: string): Observable<any> {
         return this.http.get(filePath);
     }
+
+    async addAdminUser(collection: string, doc: string, payload: any): Promise<void> {
+        return await this.afs.collection(collection).doc(doc).set(payload);
+    }
+
+    async getAdminUser(collection: string, doc: string): Promise<Observable<any>> {
+        return this.afs.collection(collection).doc(doc).valueChanges();
+    }
+
+    async getAdminUsers(collection: string): Promise<Observable<any>> {
+        return this.afs.collection(collection).valueChanges()
+    }
 }

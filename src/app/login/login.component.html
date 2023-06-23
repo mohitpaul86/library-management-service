@@ -16,8 +16,10 @@
                        aria-describedby="addon-wrapping">
             </div>
             <div style="width: 40em;margin-left: auto;margin-right: auto">
-                <button type="button" class="btn btn-danger mt-5">Cancel</button>
-                <button type="button" class="btn btn-success mt-5 ms-3" [disabled]="loginForm.invalid" (click)="validateUser()">Sign in</button>
+                <button type="button" class="btn btn-danger mt-5" (click)="loginForm.reset()">Cancel</button>
+                <button type="button" class="btn btn-success mt-5 ms-3" [disabled]="loginForm.invalid"
+                        (click)="validateUser()">Sign in
+                </button>
             </div>
         </div>
     </form>

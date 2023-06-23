@@ -8,28 +8,28 @@
             <img src="assets/images/icon.png" width="60px" height="60px">
             <a class="navbar-brand" href="#" style="padding-left: 10px">Library Management Tool – LMT</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li>
+                <li *ngIf="loginState">
                     <div class="input-group" style="width: 50em">
-                        <input type="text" id="search" class="form-control" [(ngModel)]="searchTerm" placeholder="Search book by Name or ISBN13 or ISBN10"
+                        <input type="text" id="search" class="form-control" [(ngModel)]="searchTerm"
+                               placeholder="Search book by Name or ISBN13 or ISBN10"
                                aria-label="Book Name or ISBN" aria-describedby="button-addon2" (keyup)="searchBook()">
-                        <!--<button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>-->
                     </div>
                 </li>
 
-                <li class="nav-item ms-3">
+                <li class="nav-item ms-3" *ngIf="loginState">
                     <a class="nav-link" [routerLink]="['/main']">Inventory</a>
                 </li>
-                <li class="nav-item ms-3">
+                <li class="nav-item ms-3" *ngIf="loginState">
                     <a class="nav-link" [routerLink]="['/users']">Users Management</a>
                 </li>
             </ul>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" *ngIf="loginState">
                 <div class="dropdown dropstart">
-                    <img width="50px" height="50px" style="border-radius: 50%" src="assets/images/mohit1.jpg" id="dropdownMenuButton1"
+                    <img width="50px" height="50px" style="border-radius: 50%" src="assets/images/mohit1.jpg"
+                         id="dropdownMenuButton1"
                          data-bs-toggle="dropdown" aria-expanded="false" alt="...">
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Logout!</a></li>
+                        <li><a class="dropdown-item" (click)="logout()">Logout!</a></li>
                     </ul>
                 </div>
             </ul>
