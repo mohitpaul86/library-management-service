@@ -34,7 +34,8 @@ export class LoginComponent {
                     detail: 'User Logged In....'
                 });
                 this.router.navigate(['/main']);
-                this.loginService.setLoginState(true).then(() => {});
+                this.loginService.setLoginState(true).then(() => {
+                });
             } else {
                 this.messageService.add({
                     severity: 'error',
@@ -43,6 +44,9 @@ export class LoginComponent {
                 });
             }
         }));
+        setTimeout(() => {
+            this.messageService.clear()
+        }, 3000);
 
     }
 }

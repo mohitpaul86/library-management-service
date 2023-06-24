@@ -45,10 +45,13 @@ export class UserComponent {
                 detail: 'A new user has registered successfully.'
             });
         })
+        setTimeout(() => {
+            this.messageService.clear()
+        }, 3000);
     }
 
     getRandomId() {
-        return Math.floor(Math.random()*90000) + 10000;
+        return Math.floor(Math.random() * 90000) + 10000;
     }
 
 
