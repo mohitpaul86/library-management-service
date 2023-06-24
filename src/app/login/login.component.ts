@@ -16,6 +16,7 @@ export class LoginComponent {
                 private readonly messageService: MessageService,
                 private readonly loginService: LoginService,
                 private readonly router: Router) {
+        this.loginService.setLoginState(false).then(() => console.log("State has set as false"));
     }
 
     loginForm = new FormGroup({

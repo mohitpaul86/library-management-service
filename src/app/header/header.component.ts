@@ -44,6 +44,14 @@ export class HeaderComponent implements OnInit, OnDestroy {
         }));
     }
 
+    validateLoginState() {
+        if (this.loginState) {
+            this.router.navigate(['/main'])
+        } else {
+            this.router.navigate(['/login'])
+        }
+    }
+
     logout() {
         this.loginService.setLoginState(false).then(() => console.log("State has set as false"));
         this.router.navigate(['/login']);

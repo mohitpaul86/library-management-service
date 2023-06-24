@@ -6,7 +6,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <img src="assets/images/icon.png" width="60px" height="60px">
-            <a class="navbar-brand" href="#" style="padding-left: 10px">Library Management Tool – LMT</a>
+            <a class="navbar-brand cursor-pointer" (click)="validateLoginState()" style="padding-left: 10px">Library Management Tool – LMT</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li *ngIf="loginState">
                     <div class="input-group" style="width: 50em">
