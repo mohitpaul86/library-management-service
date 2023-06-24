@@ -53,7 +53,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
     logout() {
-        this.loginService.setLoginState(false).then(() => console.log("State has set as false"));
+        this.loginService.setLoginState(false).then(() => {});
         this.router.navigate(['/login']);
     }
 

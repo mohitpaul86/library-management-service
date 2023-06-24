@@ -16,7 +16,8 @@ export class LoginComponent {
                 private readonly messageService: MessageService,
                 private readonly loginService: LoginService,
                 private readonly router: Router) {
-        this.loginService.setLoginState(false).then(() => console.log("State has set as false"));
+        this.loginService.setLoginState(false).then(() => {
+        });
     }
 
     loginForm = new FormGroup({
@@ -33,7 +34,7 @@ export class LoginComponent {
                     detail: 'User Logged In....'
                 });
                 this.router.navigate(['/main']);
-                this.loginService.setLoginState(true).then(() => console.log("State has set as true"));
+                this.loginService.setLoginState(true).then(() => {});
             } else {
                 this.messageService.add({
                     severity: 'error',

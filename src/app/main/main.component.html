@@ -4,11 +4,13 @@
             <div class="card" style="width: 15rem;">
                 <div class="card-body image-container">
                     <img src="{{book.bookImg}}" class="card-img-top hover-zoom" alt="..." height="300vh">
-                    <h6 class="mt-2">{{getSubstring(0, 20, book.bookTitle)}}</h6>
-                    <p class="small">{{getSubstring(0, 75, book.bookDesc)}}</p>
+                    <h6 class="mt-2 text-align-left">{{getSubstring(0, 20, book.bookTitle)}}</h6>
+                    <p class="small text-align-left">{{getSubstring(0, 75, book.bookDesc)}}</p>
+
+                    <span class="pe-3">In Stock :</span> <p-badge [value]="book.qty.toString()" severity="success"></p-badge>
                 </div>
                 <div class="card-footer align-content-end">
-                    <a>{{book.rentPrice}}</a><a href="#" class="btn btn-sm btn-primary pull-right">Book Now!</a>
+                    <a>{{book.rentPrice}}</a><a (click)="bookNow(book.bookId)" class="btn btn-sm btn-primary pull-right cursor-pointer">Book Now!</a>
                 </div>
             </div>
         </li>

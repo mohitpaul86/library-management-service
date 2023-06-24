@@ -8,8 +8,6 @@ A
 B
 tsconfig.spec.json,4/0/40b5dfe3a3abb750bdea34e2682ced72e652a530
 P
- src/app/main/main.component.scss,1/2/1218ab51288919948a75c3780f845cb9f4911fb0
-P
  .firebase/hosting.cHVibGlj.cache,3/5/35b65056512ce92750ded01b1ca990e3278d3fea
 ?
 firestore.rules,5/1/510e17d6ad5f02138750b2acf2a8357d826097e9

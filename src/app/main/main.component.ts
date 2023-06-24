@@ -43,4 +43,7 @@ export class MainComponent {
     }
 
 
+    bookNow(bookId: string) {
+        console.log("Book ID" + bookId);
+    }
 }

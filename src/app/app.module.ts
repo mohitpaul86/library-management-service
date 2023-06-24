@@ -19,6 +19,7 @@ import {MessagesModule} from "primeng/messages";
 import {TableModule} from "primeng/table";
 import {ChipsModule} from "primeng/chips";
 import {LoginComponent} from './login/login.component';
+import {BadgeModule} from "primeng/badge";
 
 @NgModule({
     declarations: [
@@ -42,7 +43,8 @@ import {LoginComponent} from './login/login.component';
         AngularFireModule.initializeApp(environment.firebaseConfig),
         MessagesModule,
         TableModule,
-        ChipsModule
+        ChipsModule,
+        BadgeModule
     ],
     bootstrap: [AppComponent]
 })

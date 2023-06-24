@@ -1,4 +1,5 @@
 export class Book {
+    bookId: string = '';
     bookImg: string = '';
     bookTitle: string = '';
     bookDesc: string = '';
@@ -8,4 +9,5 @@ export class Book {
     bookAuthor: string = '';
     binding: string = '';
     rentPrice: string = '';
+    qty: number = 0;
 }

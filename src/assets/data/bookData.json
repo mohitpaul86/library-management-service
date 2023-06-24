@@ -9,7 +9,7 @@
     "isbn13": "9781804990926",
     "bookAuthor": "Bonnie Garmus",
     "binding": "Paperback",
-    "rentPrice": "€ 10,99",
+    "rentPrice": "€ 2,99",
     "qty": 3
   },
   {
@@ -22,8 +22,8 @@
     "isbn13": "9781529100617",
     "bookAuthor": "Andy Weir",
     "binding": "Paperback",
-    "rentPrice": "€ 8,90",
-    "qty": 3
+    "rentPrice": "€ 1,90",
+    "qty": 2
   },
   {
     "bookId": "9781447273301",
@@ -35,7 +35,7 @@
     "isbn13": "9781447273301",
     "bookAuthor": "Adrian Tchaikovsky",
     "binding": "Paperback",
-    "rentPrice": "€ 6,90",
+    "rentPrice": "€ 3,90",
     "qty": 3
   },
   {
@@ -48,7 +48,7 @@
     "isbn13": "9781529405231",
     "bookAuthor": "Amal El-Mohtar",
     "binding": "Paperback",
-    "rentPrice": "€ 9,09",
+    "rentPrice": "€ 2,09",
     "qty": 3
   },
   {
@@ -61,8 +61,8 @@
     "isbn13": "9781529014495",
     "bookAuthor": "Ted Chiang",
     "binding": "Paperback",
-    "rentPrice": "€ 8,10",
-    "qty": 3
+    "rentPrice": "€ 1,10",
+    "qty": 2
   },
   {
     "bookId": "1785031139",
@@ -74,7 +74,7 @@
     "isbn13": "1785031139",
     "bookAuthor": "Andy Weir",
     "binding": "Paperback",
-    "rentPrice": "€ 5,80",
+    "rentPrice": "€ 2,80",
     "qty": 3
   },
   {
@@ -87,7 +87,7 @@
     "isbn13": "9781784758028",
     "bookAuthor": "Ernest Cline",
     "binding": "Paperback",
-    "rentPrice": "€ 6,90",
+    "rentPrice": "€ 3,90",
     "qty": 3
   },
   {
@@ -100,7 +100,7 @@
     "isbn13": "9780356504292",
     "bookAuthor": "James S. A. Corey",
     "binding": "Paperback",
-    "rentPrice": "€ 7,80",
+    "rentPrice": "€ 1,80",
     "qty": 3
   },
   {
@@ -113,7 +113,7 @@
     "isbn13": "9781857988840",
     "bookAuthor": "Kurt Vonnegut",
     "binding": "Paperback",
-    "rentPrice": "€ 5,80",
+    "rentPrice": "€ 1,80",
     "qty": 3
   },
   {
@@ -126,7 +126,7 @@
     "isbn13": "9781473619814",
     "bookAuthor": "Becky Chambers",
     "binding": "Paperback",
-    "rentPrice": "€ 5,70",
+    "rentPrice": "€ 2,70",
     "qty": 3
   },
   {
@@ -139,7 +139,7 @@
     "isbn13": "9781612182346",
     "bookAuthor": "Evan Currie",
     "binding": "Paperback",
-    "rentPrice": "€ 4,90",
+    "rentPrice": "€ 1,90",
     "qty": 3
   },
   {
@@ -152,7 +152,7 @@
     "isbn13": "9781784978518",
     "bookAuthor": "Cixin Liu",
     "binding": "Paperback",
-    "rentPrice": "€ 9,90",
+    "rentPrice": "€ 4,90",
     "qty": 3
   },
   {
@@ -165,7 +165,7 @@
     "isbn13": "9781407170701",
     "bookAuthor": "Julia Donaldson",
     "binding": "Paperback",
-    "rentPrice": "€ 4,50",
+    "rentPrice": "€ 1,50",
     "qty": 3
   },
   {
@@ -178,7 +178,7 @@
     "isbn13": "9781509836314",
     "bookAuthor": "Marion Cocklico",
     "binding": "Hardback",
-    "rentPrice": "€ 4,50",
+    "rentPrice": "€ 1,50",
     "qty": 3
   },
   {
@@ -191,7 +191,7 @@
     "isbn13": "9781529076622",
     "bookAuthor": "Marcus Rashford",
     "binding": "Paperback",
-    "rentPrice": "€ 3,90",
+    "rentPrice": "€ 1,40",
     "qty": 3
   },
   {
@@ -204,7 +204,7 @@
     "isbn13": "9781509830398",
     "bookAuthor": "Julia Donaldson",
     "binding": "Hardback",
-    "rentPrice": "€ 3,80",
+    "rentPrice": "€ 0,80",
     "qty": 3
   },
   {
@@ -217,7 +217,7 @@
     "isbn13": "9781474973434",
     "bookAuthor": "Fiona Watt",
     "binding": "Paperback",
-    "rentPrice": "€ 8,10",
+    "rentPrice": "€ 3,10",
     "qty": 3
   },
   {
@@ -230,7 +230,7 @@
     "isbn13": "9781509812493",
     "bookAuthor": "Julia Donaldson",
     "binding": "Paperback",
-    "rentPrice": "€ 3,90",
+    "rentPrice": "€ 1,90",
     "qty": 3
   },
   {
@@ -243,7 +243,7 @@
     "isbn13": "9781509830442",
     "bookAuthor": "Julia Donaldson",
     "binding": "Hardback",
-    "rentPrice": "€ 7,40",
+    "rentPrice": "€ 1,40",
     "qty": 3
   },
   {
@@ -256,7 +256,7 @@
     "isbn13": "9781407170725",
     "bookAuthor": "Julia Donaldson",
     "binding": "Paperback",
-    "rentPrice": "€ 4,10",
+    "rentPrice": "€ 1,10",
     "qty": 3
   },
   {
@@ -269,7 +269,7 @@
     "isbn13": "1509866949",
     "bookAuthor": "Axel Scheffler",
     "binding": "Hardback",
-    "rentPrice": "€ 4,05",
+    "rentPrice": "€ 1,05",
     "qty": 3
   },
   {
@@ -282,7 +282,7 @@
     "isbn13": "9781471192449",
     "bookAuthor": "Ben Miller",
     "binding": "Paperback",
-    "rentPrice": "€ 5,10",
+    "rentPrice": "€ 2,10",
     "qty": 3
   },
   {
@@ -295,7 +295,7 @@
     "isbn13": "1654785974IEV",
     "bookAuthor": "Eugenie Clark",
     "binding": "Hardback",
-    "rentPrice": "€ 29,20",
+    "rentPrice": "€ 13,20",
     "qty": 3
   },
   {
@@ -308,7 +308,7 @@
     "isbn13": "9780241952436",
     "bookAuthor": "Anne Frank",
     "binding": "Paperback",
-    "rentPrice": "€ 6,90",
+    "rentPrice": "€ 2,90",
     "qty": 3
   },
   {
@@ -321,7 +321,7 @@
     "isbn13": "9780241621240",
     "bookAuthor": "Michelle Obama",
     "binding": "Hardback",
-    "rentPrice": "€ 10,40",
+    "rentPrice": "€ 3,40",
     "qty": 3
   },
   {
@@ -334,7 +334,7 @@
     "isbn13": "9781529429381",
     "bookAuthor": "Damien Lewis",
     "binding": "Hardback",
-    "rentPrice": "€ 19,70",
+    "rentPrice": "€ 12,70",
     "qty": 3
   },
   {
@@ -347,7 +347,7 @@
     "isbn13": "9781529062335",
     "bookAuthor": "Adam Kay",
     "binding": "Paperback",
-    "rentPrice": "€ 4,80",
+    "rentPrice": "€ 1,80",
     "qty": 3
   },
   {
@@ -360,7 +360,7 @@
     "isbn13": "9781471146725",
     "bookAuthor": "Phil Knight",
     "binding": "Paperback",
-    "rentPrice": "€ 8,40",
+    "rentPrice": "€ 3,40",
     "qty": 3
   },
   {
@@ -373,7 +373,7 @@
     "isbn13": "9780857504791",
     "bookAuthor": "Prince Harry The Duke of Sussex",
     "binding": "Hardback",
-    "rentPrice": "€ 22,80",
+    "rentPrice": "€ 12,80",
     "qty": 3
   },
   {
@@ -386,7 +386,7 @@
     "isbn13": "9780241582589",
     "bookAuthor": "Gyles Brandreth",
     "binding": "Hardback",
-    "rentPrice": "€ 10,70",
+    "rentPrice": "€ 3,70",
     "qty": 3
   },
   {
@@ -399,7 +399,7 @@
     "isbn13": "9781800961128",
     "bookAuthor": "Otto Rosenberg",
     "binding": "Paperback",
-    "rentPrice": "€ 4,95",
+    "rentPrice": "€ 1,95",
     "qty": 3
   },
   {
@@ -412,7 +412,7 @@
     "isbn13": "9780349140438",
     "bookAuthor": "Walter Isaacson",
     "binding": "Paperback",
-    "rentPrice": "€ 7,80",
+    "rentPrice": "€ 2,80",
     "qty": 3
   }
 ]
