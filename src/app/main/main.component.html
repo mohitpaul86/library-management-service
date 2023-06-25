@@ -27,7 +27,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form [formGroup]="bookingForm">
                     <div class="mb-3 mt-3">
                         <label for="bookTitle" class="form-label small">Selected Book Title</label>
                         <input type="text" class="form-control form-control-sm" id="bookTitle"

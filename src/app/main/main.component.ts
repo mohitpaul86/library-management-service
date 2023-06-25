@@ -5,6 +5,7 @@ import {DataService} from "../shared/data-service";
 import {Subscription} from "rxjs";
 import {MessageService} from "primeng/api";
 import {Router} from "@angular/router";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
     selector: 'app-main',
@@ -17,6 +18,11 @@ export class MainComponent {
     Subscription1$: Subscription = new Subscription();
     Subscription2$: Subscription = new Subscription();
 
+    bookingForm = new FormGroup({
+        bookTitle: new FormControl('', [Validators.required]),
+        username: new FormControl('', [Validators.required]),
+        dateOfReturn: new FormControl('')
+    });
     constructor(private readonly httpClient: HttpClient, private readonly dataService: DataService,
                 private readonly messageService: MessageService,
                 private readonly router: Router) {
