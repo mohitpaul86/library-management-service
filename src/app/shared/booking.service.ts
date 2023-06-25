@@ -11,10 +11,11 @@ export class BookingService {
     }
 
     getAllBookings(): Observable<any> {
-        return this.afs.collection('bookings').valueChanges();
+        return this.afs.collection('bookings').snapshotChanges();
     }
 
     createBooking(assignmentData: any) {
-        return this.afs.collection('bookings').doc(assignmentData.username).set(assignmentData);
+        return this.afs.collection('bookings').doc(assignmentData.username)
+            .collection('books').doc(assignmentData.bookTitle).set(assignmentData);
     }
 }

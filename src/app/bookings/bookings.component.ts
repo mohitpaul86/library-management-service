@@ -15,11 +15,14 @@ export class BookingsComponent {
     }
 
     ngOnInit() {
-        this.bookingService.getAllBookings().subscribe(bookingsData => this.bookings = bookingsData)
+        this.bookingService.getAllBookings().subscribe(bookingsData => {
+            console.log(bookingsData);
+            this.bookings = bookingsData
+        })
     }
 
-  getSubstring(startIndex: number, endIndex: number, originalString: string): string {
-    return originalString.substring(startIndex, endIndex).concat("...");
-  }
+    getSubstring(startIndex: number, endIndex: number, originalString: string): string {
+        return originalString.substring(startIndex, endIndex).concat("...");
+    }
 
 }

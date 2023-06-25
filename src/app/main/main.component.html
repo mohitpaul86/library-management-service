@@ -46,7 +46,7 @@
                     </div>
                     <div class="mb-3 mt-3">
                         <label for="dateOfReturn" class="form-label small">Return Date</label><br>
-                        <p-calendar formControlName="dateOfReturn" id="dateOfReturn" dateFormat="dd.mm.yy"></p-calendar>
+                        <p-calendar formControlName="dateOfReturn" id="dateOfReturn" [readonlyInput]="true" dateFormat="dd.mm.yy"></p-calendar>
                     </div>
                 </form>
             </div>

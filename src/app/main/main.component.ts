@@ -79,5 +79,8 @@ export class MainComponent {
                 detail: 'Booking has created successfully...'
             });
         });
+        setTimeout(() => {
+            this.messageService.clear()
+        }, 3000);
     }
 }
