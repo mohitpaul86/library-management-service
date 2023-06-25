@@ -20,6 +20,7 @@ import {TableModule} from "primeng/table";
 import {ChipsModule} from "primeng/chips";
 import {LoginComponent} from './login/login.component';
 import {BadgeModule} from "primeng/badge";
+import {CalendarModule} from "primeng/calendar";
 
 @NgModule({
     declarations: [
@@ -44,7 +45,8 @@ import {BadgeModule} from "primeng/badge";
         MessagesModule,
         TableModule,
         ChipsModule,
-        BadgeModule
+        BadgeModule,
+        CalendarModule
     ],
     bootstrap: [AppComponent]
 })

@@ -6,6 +6,7 @@ import {Subscription} from "rxjs";
 import {MessageService} from "primeng/api";
 import {Router} from "@angular/router";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {UserService} from "../shared/user.service";
 
 @Component({
     selector: 'app-main',
@@ -18,13 +19,17 @@ export class MainComponent {
     Subscription1$: Subscription = new Subscription();
     Subscription2$: Subscription = new Subscription();
 
+    users: any;
+
     bookingForm = new FormGroup({
         bookTitle: new FormControl('', [Validators.required]),
         username: new FormControl('', [Validators.required]),
         dateOfReturn: new FormControl('')
     });
+
     constructor(private readonly httpClient: HttpClient, private readonly dataService: DataService,
                 private readonly messageService: MessageService,
+                private readonly userService: UserService,
                 private readonly router: Router) {
         this.Subscription1$ = this.httpClient.get('assets/data/bookData.json').subscribe(data => {
             // @ts-ignore
@@ -40,6 +45,13 @@ export class MainComponent {
                 || book.isbn13.includes(searchTeam) || book.isbn10.includes(searchTeam));
         });
 
+        this.userService.getUsers('users').then(data => {
+            data.subscribe(options => {
+                this.users = options;
+            });
+        });
+
+
     }
 
     getSubstring(startIndex: number, endIndex: number, originalString: string): string {
@@ -52,7 +64,11 @@ export class MainComponent {
     }
 
 
-    bookNow(bookId: string) {
-        console.log("Book ID" + bookId);
+    bookNow(bookId: string, bookTitle: string) {
+        this.bookingForm.controls['bookTitle'].setValue(bookTitle);
+    }
+
+    assignNow() {
+        console.log(this.bookingForm.value);
     }
 }

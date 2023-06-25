@@ -7,11 +7,13 @@
                     <h6 class="mt-2 text-align-left">{{getSubstring(0, 20, book.bookTitle)}}</h6>
                     <p class="small text-align-left">{{getSubstring(0, 75, book.bookDesc)}}</p>
 
-                    <span class="pe-3">In Stock :</span> <p-badge [value]="book.qty.toString()" severity="success"></p-badge>
+                    <span class="pe-3">In Stock :</span>
+                    <p-badge [value]="book.qty.toString()" severity="success"></p-badge>
                 </div>
                 <div class="card-footer align-content-end">
                     <a>{{book.rentPrice}}</a>
-                    <a (click)="bookNow(book.bookId)" data-bs-toggle="modal" data-bs-target="#bookingModel" aria-hidden="true"
+                    <a (click)="bookNow(book.bookId, book.bookTitle)" data-bs-toggle="modal"
+                       data-bs-target="#bookingModel" aria-hidden="true"
                        class="btn btn-sm btn-primary pull-right cursor-pointer">Book Now!</a>
                 </div>
             </div>
@@ -35,19 +37,22 @@
                     </div>
                     <div class="mb-3 mt-3">
                         <label for="username" class="form-label small">Select Assignee</label>
-                        <input type="text" class="form-control form-control-sm" id="username" formControlName="username"
-                               placeholder="type to select assignee..." name="username">
+                        <select class="form-select" aria-label="Default select example" id="username"
+                                formControlName="username">
+                            <option selected>Select one of following users</option>
+                            <option *ngFor="let user of users" value="{{user.email}}">{{user.lastName}}, {{user.firstName}}</option>
+                        </select>
+
                     </div>
                     <div class="mb-3 mt-3">
-                        <label for="dateOfReturn" class="form-label small">Return Date</label>
-                        <input type="text" class="form-control form-control-sm" id="dateOfReturn" formControlName="dateOfReturn"
-                               placeholder="enter return date..." name="email">
+                        <label for="dateOfReturn" class="form-label small">Return Date</label><br>
+                        <p-calendar formControlName="dateOfReturn" id="dateOfReturn" dateFormat="dd.mm.yy"></p-calendar>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Assign
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="assignNow()">Assign
                 </button>
             </div>
         </div>
