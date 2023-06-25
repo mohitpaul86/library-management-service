@@ -21,6 +21,7 @@ import {ChipsModule} from "primeng/chips";
 import {LoginComponent} from './login/login.component';
 import {BadgeModule} from "primeng/badge";
 import {CalendarModule} from "primeng/calendar";
+import {BookingsComponent} from './bookings/bookings.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import {CalendarModule} from "primeng/calendar";
         MainComponent,
         FooterComponent,
         UserComponent,
-        LoginComponent
+        LoginComponent,
+        BookingsComponent
     ],
     imports: [
         BrowserModule,

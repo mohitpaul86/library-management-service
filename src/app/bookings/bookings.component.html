@@ -1,0 +1,15 @@
+<div class="pt-3 text-center">
+    <ul class="list-inline">
+        <li class="list-inline-item list-unstyled m-2" *ngFor="let booking of bookings">
+            <div class="card" style="width: 15rem;">
+                <div class="card-body image-container">
+                    <h6 class="mt-2 text-align-left">{{getSubstring(0, 20, booking.bookTitle)}}</h6>
+                    <p class="small text-align-left">{{getSubstring(0, 75, booking.username)}}</p>
+                </div>
+                <div class="card-footer align-content-end">
+                    <a>{{booking.dateOfReturn}}</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
