@@ -13,7 +13,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
     searchTerm: string = '';
     loginState: boolean | undefined
 
-    constructor(private dataService: DataService, private readonly userService: UserService,
+    user = localStorage.getItem('user');
+
+    constructor(private dataService: DataService,
+                private readonly userService: UserService,
                 private readonly loginService: LoginService,
                 private readonly router: Router) {
         this.getLoginState();
@@ -24,6 +27,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit(): void {
+        this.dataService.data$.subscribe(user => {
+            this.user = user;
+            if (user) localStorage.setItem('user', this.user);
+        });
+
     }
 
     searchBook() {
@@ -53,12 +61,16 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
     logout() {
-        this.loginService.setLoginState(false).then(() => {});
+        this.loginService.setLoginState(false).then(() => {
+            localStorage.clear();
+        });
         this.router.navigate(['/login']);
     }
 
     ngOnDestroy(): void {
-
     }
 
+    getUserDetails() {
+
+    }
 }

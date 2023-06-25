@@ -4,6 +4,7 @@ import {Book} from "./book.model";
 import {DataService} from "../shared/data-service";
 import {Subscription} from "rxjs";
 import {MessageService} from "primeng/api";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-main',
@@ -16,7 +17,9 @@ export class MainComponent {
     Subscription1$: Subscription = new Subscription();
     Subscription2$: Subscription = new Subscription();
 
-    constructor(private readonly httpClient: HttpClient, private readonly dataService: DataService, private readonly messageService: MessageService) {
+    constructor(private readonly httpClient: HttpClient, private readonly dataService: DataService,
+                private readonly messageService: MessageService,
+                private readonly router: Router) {
         this.Subscription1$ = this.httpClient.get('assets/data/bookData.json').subscribe(data => {
             // @ts-ignore
             this.books = data

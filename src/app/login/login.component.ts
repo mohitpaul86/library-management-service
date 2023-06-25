@@ -4,6 +4,7 @@ import {UserService} from "../shared/user.service";
 import {MessageService} from "primeng/api";
 import {Router} from "@angular/router";
 import {LoginService} from "../shared/login.service";
+import {DataService} from "../shared/data-service";
 
 @Component({
     selector: 'app-login',
@@ -15,6 +16,7 @@ export class LoginComponent {
     constructor(private readonly userService: UserService,
                 private readonly messageService: MessageService,
                 private readonly loginService: LoginService,
+                private readonly dataService: DataService,
                 private readonly router: Router) {
         this.loginService.setLoginState(false).then(() => {
         });
@@ -34,6 +36,7 @@ export class LoginComponent {
                     detail: 'User Logged In....'
                 });
                 this.router.navigate(['/main']);
+                this.dataService.sendData(user.lastName + ', ' + user.firstName);
                 this.loginService.setLoginState(true).then(() => {
                 });
             } else {

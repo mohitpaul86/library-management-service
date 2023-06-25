@@ -10,9 +10,48 @@
                     <span class="pe-3">In Stock :</span> <p-badge [value]="book.qty.toString()" severity="success"></p-badge>
                 </div>
                 <div class="card-footer align-content-end">
-                    <a>{{book.rentPrice}}</a><a (click)="bookNow(book.bookId)" class="btn btn-sm btn-primary pull-right cursor-pointer">Book Now!</a>
+                    <a>{{book.rentPrice}}</a>
+                    <a (click)="bookNow(book.bookId)" data-bs-toggle="modal" data-bs-target="#bookingModel" aria-hidden="true"
+                       class="btn btn-sm btn-primary pull-right cursor-pointer">Book Now!</a>
                 </div>
             </div>
         </li>
     </ul>
 </div>
+
+<div class="modal modal-lg fade" id="bookingModel" tabindex="-1" aria-labelledby="booking" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="booking">Assign a book</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3 mt-3">
+                        <label for="bookTitle" class="form-label small">Selected Book Title</label>
+                        <input type="text" class="form-control form-control-sm" id="bookTitle"
+                               formControlName="bookTitle" name="email">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="username" class="form-label small">Select Assignee</label>
+                        <input type="text" class="form-control form-control-sm" id="username" formControlName="username"
+                               placeholder="type to select assignee..." name="username">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="dateOfReturn" class="form-label small">Return Date</label>
+                        <input type="text" class="form-control form-control-sm" id="dateOfReturn" formControlName="dateOfReturn"
+                               placeholder="enter return date..." name="email">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Assign
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
