@@ -73,8 +73,8 @@
             <div class="flex">
                 <span class="p-input-icon-left ml-auto">
                     <i class="pi pi-search"></i>
-                    <input #userId pInputText type="text" (input)="dt1.filterGlobal(userId.value, 'contains')"
-                           placeholder="Search User"/>
+                    <input #userId pInputText type="text" class="form-control" (input)="dt1.filterGlobal(userId.value, 'contains')"
+                           placeholder="Search user here"/>
                 </span>
             </div>
         </ng-template>
