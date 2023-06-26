@@ -3,6 +3,7 @@ import {DataService} from "../shared/data-service";
 import {UserService} from "../shared/user.service";
 import {LoginService} from "../shared/login.service";
 import {Router} from "@angular/router";
+import {UsernameService} from "../shared/username-service";
 
 @Component({
     selector: 'app-header',
@@ -17,6 +18,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
     constructor(private dataService: DataService,
                 private readonly userService: UserService,
+                private readonly usernameService: UsernameService,
                 private readonly loginService: LoginService,
                 private readonly router: Router) {
         this.getLoginState();
@@ -27,7 +29,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit(): void {
-        this.dataService.data$.subscribe(user => {
+        this.usernameService.data$.subscribe(user => {
             this.user = user;
             if (user) localStorage.setItem('user', this.user);
         });
@@ -68,9 +70,5 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
     ngOnDestroy(): void {
-    }
-
-    getUserDetails() {
-
     }
 }

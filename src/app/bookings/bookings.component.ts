@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {BookingService} from "../shared/booking.service";
+import {MessageService} from "primeng/api";
 
 @Component({
     selector: 'app-bookings',
@@ -10,7 +11,7 @@ export class BookingsComponent {
 
     bookings: any;
 
-    constructor(private readonly bookingService: BookingService) {
+    constructor(private readonly bookingService: BookingService, private readonly messageService: MessageService) {
     }
 
     ngOnInit() {
@@ -23,9 +24,15 @@ export class BookingsComponent {
         return originalString.substring(startIndex, endIndex).concat("...");
     }
 
-    returnBook(booking: any) {
-        console.log(booking);
-        const filteredBookings =  this.bookings.map((book: any) => book.bookTitle === booking.bookTitle && book.username === booking.username);
-        console.log(filteredBookings);
+    returnBook(bookingID: any) {
+        //const index = this.bookings.findIndex((book: any) => book.bookingId === booking.bookingId);
+        //this.bookings.splice(index, 1);
+        this.bookingService.returnBook(bookingID).then(() => {
+            this.messageService.add({
+                severity: 'success',
+                summary: 'Success',
+                detail: 'Book has returned successfully...'
+            });
+        });
     }
 }

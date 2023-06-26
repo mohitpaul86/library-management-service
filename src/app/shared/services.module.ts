@@ -5,12 +5,14 @@ import {DataService} from "./data-service";
 import {UserService} from "./user.service";
 import {LoginService} from "./login.service";
 import {BookingService} from "./booking.service";
+import {UsernameService} from "./username-service";
 
 @NgModule({
     providers: [
         FirebaseDataService,
         MessageService,
         DataService,
+        UsernameService,
         UserService,
         LoginService,
         BookingService

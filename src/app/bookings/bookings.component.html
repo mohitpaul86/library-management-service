@@ -4,7 +4,7 @@
         <li class="list-inline-item list-unstyled m-2" *ngFor="let booking of bookings">
             <div class="card" style="width: 15rem;">
                 <div class="card-body image-container">
-                    <i class="fa fa-3x fa-arrow-circle-left cursor-pointer" aria-hidden="true" (click)="returnBook(booking)"></i>
+                    <i class="fa fa-3x fa-arrow-circle-left cursor-pointer" aria-hidden="true" (click)="returnBook(booking.bookingId)"></i>
                     <h6 class="mt-2 text-align-left">{{getSubstring(0, 20, booking.bookTitle)}}</h6>
                     <p class="small text-align-left">{{getSubstring(0, 75, booking.username)}}</p>
                 </div>
