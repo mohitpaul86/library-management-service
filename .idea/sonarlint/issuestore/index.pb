@@ -29,12 +29,6 @@ S
 #src/app/main/main.component.spec.ts,5/c/5c2beda457cb5145a90f727aab863f906621f857
 A
 package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
-<
-angular.json,e/9/e92338c6e49ff34f9022980cc89bbebd60974bad
-H
-src/app/app.component.ts,3/0/302be76b17ec3188653bea112207e65dde129e59
-J
-src/app/app.component.html,0/6/06895b2dfff011115a8eded7e3fad29788965566
 U
 %src/app/login/login.component.spec.ts,c/4/c4f4d25464610a1d7fb02827cd468a5f53cdcc0e
 >
@@ -55,9 +49,31 @@ V
 &src/app/shared/firebasedata.service.ts,c/5/c58b49cbb8fb1e2aca5420154de7889d440785ad
 P
  src/app/main/main.component.scss,1/2/1218ab51288919948a75c3780f845cb9f4911fb0
-E
-src/app/app.module.ts,0/2/02c004b4329a0d99c45abb61a30dadfde61ecf5d
 M
 src/assets/data/bookData.json,6/1/6141587eee49fa75f92ba579a8484cff391171e9
+M
+src/app/app-routing.module.ts,6/f/6fd35c988c6ab19d90be440792fa8c817dd8dc67
+O
+src/app/shared/login.service.ts,e/0/e0e8984e0def4e63ef622f632568c50a69e63082
+[
++src/app/bookings/bookings.component.spec.ts,c/4/c441b6e97a4ea9d3adca24950caf3f83ca08c212
+W
+'src/app/header/header.component.spec.ts,3/c/3c17e9b1b221fb9f59060ac402ec5d2be0f71dd4
+X
+(src/app/bookings/bookings.component.scss,7/0/707b940cee0e0e169c8dd52a2fd7ae9e12b86ced
+P
+ src/app/user/user.component.html,b/0/b0642422c43d9e31daa1499ce7aed5be1485ab44
 N
-src/app/user/user.component.ts,c/a/caeb7547c9e071e8970c29b05d421ddeb796a918
+src/app/shared/user.service.ts,b/d/bd9e5b97b47672fd67970e7a2b6b5494d27ebd34
+T
+$src/app/header/header.component.scss,8/4/845d6322b203d1c24035e9bd7d1e37fadaca89ae
+T
+$src/app/header/header.component.html,0/4/04ec72c850f33c7ae94fe4bb26ffac1894f4eda9
+N
+src/app/shared/data-service.ts,8/9/89589135f2e31eb2950a156f3a02a56f4817696a
+R
+"src/app/shared/username-service.ts,4/6/46336897ee47986139574d956db495b3aac5e6ba
+Q
+!src/app/shared/booking.service.ts,8/3/8327dc95228312a54dc0149d53b2e969490ce138
+r
+B.firebase/hosting.ZGlzdC9saWJyYXJ5LW1hbmFnZW1lbnQtc2VydmljZQ.cache,d/7/d7edcdc039c863e10b3265368ccecf24b4863ab8

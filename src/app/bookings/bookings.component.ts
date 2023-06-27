@@ -25,8 +25,6 @@ export class BookingsComponent {
     }
 
     returnBook(bookingID: any) {
-        //const index = this.bookings.findIndex((book: any) => book.bookingId === booking.bookingId);
-        //this.bookings.splice(index, 1);
         this.bookingService.returnBook(bookingID).then(() => {
             this.messageService.add({
                 severity: 'success',

@@ -7,7 +7,6 @@ import {MainComponent} from './main/main.component';
 import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from "./footer/footer.component";
 import {UserComponent} from './user/user.component';
-import {AgGridModule} from "ag-grid-angular";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
@@ -40,7 +39,6 @@ import {BookingsComponent} from './bookings/bookings.component';
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
-        AgGridModule,
         FormsModule,
         SharedServicesModule,
         AngularFireModule.initializeApp(environment.firebaseConfig),
