@@ -37,8 +37,6 @@ J
 src/app/app.component.scss,3/2/32a53d37513cda56e54c64c42e8ba0abeaab7882
 P
  src/app/user/user.component.scss,4/e/4eecc147a2d0cc4a1037283be401a29129412900
-R
-"src/app/login/login.component.html,b/d/bd67198b8bdb41ee61c49eb9ad026d62b1bbf543
 J
 src/app/main/book.model.ts,5/2/520eb5b41be300079043ad2c064078461fcd5a74
 =

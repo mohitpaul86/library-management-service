@@ -25,12 +25,13 @@ export class LoginComponent {
     }
 
     loginForm = new FormGroup({
-        username: new FormControl('', [Validators.email, Validators.required]),
+        username: new FormControl('', [Validators.required]),
         password: new FormControl('', Validators.required)
     });
 
     validateUser() {
-        this.userService.getAdminUser("admin_users", this.loginForm.value.username!!).then(data => data.subscribe(user => {
+        console.log(this.loginForm.value.username);
+        this.userService.getAdminUser("admin_users", this.loginForm.value.username!!.toString()).then(data => data.subscribe(user => {
             if (user && (this.loginForm.value.username === user.username && this.loginForm.value.password === user.password)) {
                 this.messageService.add({
                     severity: 'success',
