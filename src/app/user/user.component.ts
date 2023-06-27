@@ -54,5 +54,16 @@ export class UserComponent {
         return Math.floor(Math.random() * 90000) + 10000;
     }
 
-
+    deleteUser(user: any) {
+        this.userService.deleteUser(user.contact).then(() => {
+            this.messageService.add({
+                severity: 'success',
+                summary: 'Success',
+                detail: 'A user has deleted successfully.'
+            });
+        });
+        setTimeout(() => {
+            this.messageService.clear()
+        }, 3000);
+    }
 }

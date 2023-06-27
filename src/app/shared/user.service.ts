@@ -36,4 +36,8 @@ export class UserService {
     async getAdminUsers(collection: string): Promise<Observable<any>> {
         return this.afs.collection(collection).valueChanges()
     }
+
+    async deleteUser(contact: any): Promise<void> {
+        return this.afs.collection('users').doc(contact.toString()).delete();
+    }
 }

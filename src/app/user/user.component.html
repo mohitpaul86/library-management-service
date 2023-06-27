@@ -114,7 +114,8 @@
                 <td>
                     <span class="ml-1 vertical-align-middle">{{users.address}}</span>
                 </td>
-                <td class="text-center">
+                <td>
+                    <i class="fa fa-2x fa-times ms-2 cursor-pointer" aria-hidden="true" title="Delete User" (click)="deleteUser(users)"></i>
                 </td>
             </tr>
         </ng-template>

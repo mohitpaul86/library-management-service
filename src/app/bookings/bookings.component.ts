@@ -32,5 +32,8 @@ export class BookingsComponent {
                 detail: 'Book has returned successfully...'
             });
         });
+        setTimeout(() => {
+            this.messageService.clear()
+        }, 3000);
     }
 }

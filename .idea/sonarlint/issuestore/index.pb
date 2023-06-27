@@ -27,8 +27,6 @@ O
 src/environments/environment.ts,9/e/9e665cec867bbf89b5afc6420722808938387dc4
 S
 #src/app/main/main.component.spec.ts,5/c/5c2beda457cb5145a90f727aab863f906621f857
-A
-package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
 U
 %src/app/login/login.component.spec.ts,c/4/c4f4d25464610a1d7fb02827cd468a5f53cdcc0e
 >
@@ -61,19 +59,9 @@ W
 'src/app/header/header.component.spec.ts,3/c/3c17e9b1b221fb9f59060ac402ec5d2be0f71dd4
 X
 (src/app/bookings/bookings.component.scss,7/0/707b940cee0e0e169c8dd52a2fd7ae9e12b86ced
-P
- src/app/user/user.component.html,b/0/b0642422c43d9e31daa1499ce7aed5be1485ab44
-N
-src/app/shared/user.service.ts,b/d/bd9e5b97b47672fd67970e7a2b6b5494d27ebd34
 T
 $src/app/header/header.component.scss,8/4/845d6322b203d1c24035e9bd7d1e37fadaca89ae
-T
-$src/app/header/header.component.html,0/4/04ec72c850f33c7ae94fe4bb26ffac1894f4eda9
 N
 src/app/shared/data-service.ts,8/9/89589135f2e31eb2950a156f3a02a56f4817696a
 R
 "src/app/shared/username-service.ts,4/6/46336897ee47986139574d956db495b3aac5e6ba
-Q
-!src/app/shared/booking.service.ts,8/3/8327dc95228312a54dc0149d53b2e969490ce138
-r
-B.firebase/hosting.ZGlzdC9saWJyYXJ5LW1hbmFnZW1lbnQtc2VydmljZQ.cache,d/7/d7edcdc039c863e10b3265368ccecf24b4863ab8
